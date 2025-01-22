@@ -25,7 +25,9 @@ test('DatePicker',async ({page})=>{
 
         }
 
-        await page.locator('//a[@title="Next"]').click()
+        await page.locator('//a[@title="Next"]').click() //next button
+        //await page.locator('//a[@title="Prev"]').click() //previous button for selection of previous years
+        
     }
 
    
@@ -41,6 +43,8 @@ test('DatePicker',async ({page})=>{
     } */
 
     await page.click('//a[@data-date="21"]')
+    
+
 
     await page.waitForTimeout(5000)
 
